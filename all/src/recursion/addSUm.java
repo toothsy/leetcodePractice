@@ -16,5 +16,6 @@ public class addSUm {
         int []x = new int[]{1,2,3,4,5,6};
         as(x,5);
         System.out.println(Arrays.toString(x));
+        System.out.println((int)Math.log10(1010)+1);
     }
 }

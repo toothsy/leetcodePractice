@@ -1,6 +1,28 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
+
+class a{
+    static int aliceJog(int n,int[]memo){
+        if(n<0)
+            return 0;
+        else if(n == 0)
+            return 1;
+        else if(memo[n]>-1)
+            return memo[n];
+        else{
+            memo[n] = (aliceJog(n-1,memo)%1000000007+aliceJog(n-2,memo)%1000000007)%1000000007;
+            return memo[n];
+        }
+    }
+}
 public class tripleStep {
+    static int noOfWays(int inp ){
+        int[] memo = new int[inp+1];
+        Arrays.fill(memo,-1);
+        return a.aliceJog(inp,memo);
+
+    }
     public static int answer(int n){
         if(n==0||n==1) return 1;
         if(n==2||n==3) return n;
@@ -39,5 +61,9 @@ public class tripleStep {
 //        System.out.println("for n = "+n+"\nyou can go up "+answer(n)+" ways");
         System.out.println("for n = "+n+"\nyou can go up "+countWays(n)+" ways");
 
+        System.out.println("alice can jog in "+noOfWays(10011));
+
     }
+
+
 }

@@ -24,12 +24,11 @@ static class Edges implements Comparator<Edges> {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Edges{");
-        sb.append("weight=").append(weight);
-        sb.append(", source=").append(source);
-        sb.append(", destination=").append(destination);
-        sb.append('}');
-        return sb.toString();
+        String sb = "Edges{" + "weight=" + weight +
+                ", source=" + source +
+                ", destination=" + destination +
+                '}';
+        return sb;
     }
 }
     List<List<Integer>> adjacencyList = new LinkedList<>();
