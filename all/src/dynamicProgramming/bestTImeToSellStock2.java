@@ -1,11 +1,14 @@
 public class bestTImeToSellStock2 {
     public static int btts(int[] prices){
         int size = prices.length;
-        int[][] dp = new int[size+1][size+1];
+        int[][] dp = new int[size][size+1];
         int maxSoFar =0;
         for(int i =1;i<=size;i++){
             for(int j = i+1;j<size;j++ ){
-                dp[i][j] = Math.max(dp[i-1][j+1],dp[i-1][j]) + prices[j] - prices[i];
+                int prof = Math.max(dp[i-1][j-1],dp[i-1][j]) ;
+                int sell = prices[j-1] - prices[i-1];
+                dp[i][j] = prof + sell;
+
                 maxSoFar = Math.max(dp[i][j],maxSoFar);
             }
         }
@@ -14,6 +17,6 @@ public class bestTImeToSellStock2 {
 
     }
     public static void main(String[] args) {
-        System.out.println(btts(new int[]{7,1,5,3,6,4}));
+        System.out.println(btts(new int[]{1,10,5,10,6,4}));
     }
 }

@@ -1,3 +1,5 @@
+package greedy;
+
 import java.util.Arrays;
 class pairedTask{
     int first , second;
@@ -15,8 +17,8 @@ class pairedTask{
     }
 }
 public class optimumAssignment {
-    /*
-        we have to assign exactly two jobs to workers, no task constraints.
+    /**
+        we have to assign exactly two jobs to workers, <h1>no task constraints.</h1>
         example say tasks are 5,2,1,6,4,4 find minimum waiting time
      */
     public static void main(String[] args) {

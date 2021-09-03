@@ -37,6 +37,7 @@ public class binSea {
             firstTrue[i] = true;
         }
         System.out.println("last true at "+lastOccurrenceOfTrue(firstTrue));
+//        assert 1==2;
 
 
         boolean [] firstFalse = new boolean[100];

@@ -2,13 +2,12 @@ package company;
 
 public class armstrong {
 
-    public static int getDigit(int num){return num%10;}
 
     public static boolean getArmStrong(int n){
         int sum = 0;
         int dummy = n;
         while(dummy!=0){
-            int dig = getDigit(dummy);
+            int dig = dummy%10;
 
             sum+= Math.pow(dig,3);
 

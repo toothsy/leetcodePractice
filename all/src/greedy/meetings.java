@@ -1,3 +1,5 @@
+package greedy;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -29,7 +31,7 @@ public class meetings {
         //sorting the meeting array based on the end timings
         // first activity always gets selected
         int meets=1;
-        int j=0;// to keep track of the successfully selected acitivity
+        int j=0;// to keep track of the successfully selected activity
         for(int i = 1;i<n;i++){
             if(meetingArray[j].end<meetingArray[i].start){
                 j=i;// to move the activity

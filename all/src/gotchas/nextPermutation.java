@@ -1,3 +1,5 @@
+package gotchas;
+
 import java.util.Arrays;
 
 public class nextPermutation {
