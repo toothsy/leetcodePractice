@@ -1,9 +1,6 @@
 package collectionDemo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class collectionDemo {
     public static void main(String[] args) {
@@ -28,8 +25,9 @@ public class collectionDemo {
                     copy.add(i);
         Collections.copy(copy,al);
             System.out.println("copy is "+copy);
-
-
+        int[] arr = new int[]{1,2,3,4,5,6,7};
+        Collections.rotate(Arrays.asList(arr),2);
+        System.out.println(Arrays.toString(arr));
 
 
     }

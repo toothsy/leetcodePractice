@@ -34,6 +34,7 @@ public class mapDemo {
         System.out.println(lhm);
         System.out.println(tm);
         linkedHashMapTest();
+        collisionCheck();
     }
 
     public static void linkedHashMapTest(){
@@ -45,6 +46,23 @@ public class mapDemo {
         for(Integer e : hm.keySet()){
             System.out.println(hm.get(e));
         }
+
+    }
+    public static void collisionCheck(){
+        Map<String,Integer> hm = new HashMap<>();
+        //default size at 16,fill ratio at 0.75
+        hm.put("one",1);
+        hm.put("two",2);
+        hm.put("three",3);
+        hm.put("four",4);
+        System.out.println(hm.containsKey("1"));//false
+        System.out.println(hm.containsValue(1));//true
+        System.out.println(hm.get("one"));
+        hm.remove("one");
+        hm.getOrDefault("zero",0);
+        hm.put("zero",10);
+        hm.getOrDefault("zero",10);
+        hm.put("zero",0);
 
     }
 }
