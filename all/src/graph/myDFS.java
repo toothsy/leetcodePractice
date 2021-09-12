@@ -3,6 +3,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 class myDFS{
+
+     /**
+      * <img width="400px" height="900px" src="./photos/graph.png" alt="ihio"/>
+      */
      static int vert;
      static List<List<Integer>> adjl = new LinkedList<>();
 

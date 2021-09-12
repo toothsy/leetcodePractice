@@ -19,7 +19,11 @@ public class catalanNumber {
             I = I.multiply(BigInteger.valueOf(i));
             memo[i] = I;
         }
+
         BigInteger num = memo[2*n];
+//        Integer rem = num.mod(BigInteger.TEN).intValue();
+//        num.compareTo(BigInteger.ZERO);
+//        num = num.divide()
         BigInteger den = N.add(BigInteger.ONE).multiply(memo[n].multiply(memo[n]));
         return num.divide(den);
     }

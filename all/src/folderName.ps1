@@ -1,0 +1,1 @@
+Get-ChildItem -Path . -Directory -Recurse -Name -Force -ErrorAction SilentlyContinue

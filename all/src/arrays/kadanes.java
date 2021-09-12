@@ -13,9 +13,9 @@ public class kadanes {
         }
         return maxSum;
     }
-    public static void main(String[] args) {
-        int [] arr = new int[] {-1,-2,-3,-4,10,20,30};
-        System.out.println(maxSubarraySum(arr,arr.length));
 
+    public static void main(String[] args) {
+        int [] arr = new int[] {-1,-2,-3,-4};
+        System.out.println(maxSubarraySum(arr,arr.length));
     }
 }

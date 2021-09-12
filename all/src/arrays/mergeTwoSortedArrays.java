@@ -16,15 +16,11 @@ public class mergeTwoSortedArrays {
 
     private static void mergeArrs(int m, int[] n1, int[] n2, int n) {
         int[] mArray = new int[m];
-
         System.arraycopy(n1, 0, mArray, 0, m);
-
         int mp1 = 0;
         int p1 = 0;
         int p2 = 0;
-
         while(mp1<m&&p2<n){
-
             if(mArray[mp1]<n2[p2]){
                 n1[p1] = mArray[mp1] ;
                 p1++;mp1++;
