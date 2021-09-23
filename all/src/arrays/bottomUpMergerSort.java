@@ -30,6 +30,7 @@ public class bottomUpMergerSort {
     public static void main(String[] args) {
          int[] arr = new int[]{4,5,7,5,12,2,2,4,7,5,6,6,6,12,87,2};
         bums(arr);
+
         System.out.println(Arrays.toString(aux));;
     }
 }

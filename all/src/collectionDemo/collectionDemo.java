@@ -25,7 +25,7 @@ public class collectionDemo {
                     copy.add(i);
         Collections.copy(copy,al);
             System.out.println("copy is "+copy);
-        int[] arr = new int[]{1,2,3,4,5,6,7};
+        Integer[] arr = new Integer[]{1,2,3,4,5,6,7};
         Collections.rotate(Arrays.asList(arr),2);
         System.out.println(Arrays.toString(arr));
 

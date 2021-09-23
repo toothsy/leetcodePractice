@@ -15,8 +15,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/graph" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/stack" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/strings" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/tree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/queue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/binaryTree" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

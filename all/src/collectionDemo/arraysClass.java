@@ -29,5 +29,6 @@ public class arraysClass {
         System.out.println("binarySearch \n"+Arrays.binarySearch(test,4,8,6));
         Arrays.fill(test,-1);
         System.out.println("filled -1\n"+Arrays.toString(test));
+
     }
 }

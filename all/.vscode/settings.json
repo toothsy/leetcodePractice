@@ -1,0 +1,7 @@
+{
+	"java.project.sourcePaths": [
+		"src/strings",
+		"src/arrays",
+		"src"
+	]
+}

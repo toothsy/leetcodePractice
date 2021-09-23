@@ -59,10 +59,25 @@ public class tripleStep {
     public static void main(String[] args) {
         int n = 5; // number of steps
 //        System.out.println("for n = "+n+"\nyou can go up "+answer(n)+" ways");
-        System.out.println("for n = "+n+"\nyou can go up "+countWays(n)+" ways");
-
-        System.out.println("alice can jog in "+noOfWays(10011));
-
+//        System.out.println("for n = "+n+"\nyou can go up "+countWays(n)+" ways");
+//
+//        System.out.println("alice can jog in "+noOfWays(10011));
+        int[] memo = new int[100000];
+        Arrays.fill(memo,-1);
+        System.out.println(countChange(127, memo, 1)-1);
+        System.out.println(Arrays.toString(memo));
+    }
+    private static int countChange(int n, int[] memo, int level) {
+        if(n<0)
+            return 0;
+        else if(n==0)
+            return 1;
+        else if(memo[n]>-1)
+            return memo[n];
+        else{
+            memo[n]=countChange(n-1,memo,level+1)+countChange(n-(int)Math.pow(6,level),memo,level+1)+countChange(n-(int)Math.pow(9,level),memo,level+1);
+            return memo[n];
+        }
     }
 
 

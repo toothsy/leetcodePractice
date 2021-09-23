@@ -33,10 +33,10 @@ public class editDis {
     }
     public static void main(String[] args) {
         System.out.println(editDistance("abc","abcd"));
-        char[] al = "ABCD".toCharArray();
-        System.out.println(Arrays.toString(al));
+        // char[] al = "ABCD".toCharArray();
+        // System.out.println(Arrays.toString(al));
 
-        System.out.println(al[3]-64);
+        // System.out.println(al[3]-64);
     }
 
 
