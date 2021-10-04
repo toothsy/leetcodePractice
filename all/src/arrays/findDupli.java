@@ -9,18 +9,22 @@ public class findDupli {
     public static int fd(int[] nums){
         int tortoise = nums[0];
         int hare = nums[0];
+        int iter = 0;
         do {
             tortoise = nums[tortoise];
             hare = nums[nums[hare]];
+            iter++;
         } while (tortoise != hare);
 
         // Find the "entrance" to the cycle.
         tortoise = nums[0];
         while (tortoise != hare) {
             tortoise = nums[tortoise];
+            iter++;
+
             hare = nums[hare];
         }
-
+        System.out.println("total iterations are "+ iter);
         return hare;
 
 
